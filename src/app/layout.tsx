@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HotelHub",
-  description: "Hotel Booking Platform",
+  title: "PrudentBit Patient",
+  description: "PatientInfo",
   icons: { icon : '/logo.svg' },
 };
 
