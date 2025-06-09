@@ -4,7 +4,7 @@ A responsive, searchable patient directory built using **Next.js**, **TypeScript
 
 ## 🚀 Live Demo
 
-[🔗 Click here to view live app](https://your-deployment-link.vercel.app)
+[🔗 Click here to view live app](https://prudent-assesment.vercel.app/)
 
 ## 🧰 Tech Stack
 
