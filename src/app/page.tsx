@@ -19,7 +19,7 @@ export default function Page() {
   useEffect(() => {
     setLoading(true);
     const delayDebounce = setTimeout(() => {
-      fetchPatients(page, 10, search).then((res) => {
+      fetchPatients(page, 12, search).then((res) => {
         setPatients(res.data);
         setTotalPages(res.pagination.total_pages);
         setLoading(false);
@@ -57,7 +57,7 @@ export default function Page() {
               <PatientTable patients={patients} />
             </TabsContent>
             <TabsContent value="card">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {patients.map((patient) => (
                   <PatientCard key={patient.patient_id} patient={patient} />
                 ))}

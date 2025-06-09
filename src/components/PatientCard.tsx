@@ -6,7 +6,7 @@ import { getDiseaseColor } from "@/app/utils/getDiseaseColor";
 
 export default function PatientCard({ patient }: { patient: Patient }) {
   const contact = patient.contact[0];
-
+  console.log(patient.photo_url)
   const isValidImage = (url: string | undefined) => {
     return !!url && /\.(jpg|jpeg|png|webp|gif)$/i.test(url);
   };
@@ -28,6 +28,7 @@ export default function PatientCard({ patient }: { patient: Patient }) {
               N/A
             </div>
           )}
+          
           <div>
             <h2 className="text-xl font-semibold">{patient.patient_name}</h2>
             <p className="text-sm text-gray-600">Age: {patient.age}</p>

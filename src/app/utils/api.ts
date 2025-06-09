@@ -1,6 +1,6 @@
 export async function fetchPatients(
     page: number = 1,
-    limit: number = 10,
+    limit: number = 12,
     search: string = ""
   ) {
     const res = await fetch(
